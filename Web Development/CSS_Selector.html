@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+    div{
+        background-color: rgb(242, 75, 164);
+    }
+
+    .red{
+        background-color: aqua;
+    }
+
+    #blue{
+        background-color: rgb(30, 236, 23);
+    }
+
+    div > p{
+        background-color: red;
+    }
+
+    div p{
+        background-color: violet;
+    }
+
+    *{
+        margin: 0;
+        padding: 0%;  
+    }
+
+    a{
+        background-color: rgb(116, 191, 244);
+        color:red;
+    }
+    a:hover{
+        background-color: blueviolet;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <!-- Element Selector -->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eum!
+    </div>
+
+    <!-- Class Selector -->
+    <div class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, architecto.
+    </div>
+    
+    <!-- Id Selector -->
+    <div id="blue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, mollitia.
+    </div>
+    
+    <!-- Child Selector :- Exact p after div-->
+    <!-- <div>
+        <p>i am para</p>
+    </div> -->
+
+    <!-- Descendent Selector:- All p (don't matter where they are inside a div ) -->
+    <div>
+        <main>
+            <article>
+                <aside>
+                    <ul>
+                        <p> This is another para</p>
+                    </ul>
+                </aside>
+            </article>
+        </main>
+    </div>
+
+    <!-- Universal Selector  ( * ) -->
+
+    <!-- Pseudo Selector -->
+    <a href="http://google.com"> Go to google</a>
+</body>
+</html>

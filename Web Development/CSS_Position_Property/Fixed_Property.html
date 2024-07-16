@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Property</title>
+    <style>
+.container{
+        border: 2px solid red;
+        display: flex;
+        height: 100vh;
+        padding: 30px;
+        margin: 40px;
+    
+    }
+    .box{
+        height: 700px;
+        width: 200px;
+        border: 2px solid ;}
+
+    #box1{
+        background-color: rgb(53, 251, 53);
+    }
+
+    #box2{
+        background-color: rgb(34, 226, 252);
+    }
+
+    #box3{
+        background-color: rgb(249, 92, 199);
+        position: fixed;
+        top: 100px;
+        width: 60vh;
+        left: 200px;
+        height: 50vh;
+    }
+    #box4{
+        background-color: rgb(214, 33, 227);
+    }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box" id="box1">I am a box</div>
+        <div class="box" id="box2">I am a box</div>
+        <div class="box" id="box3">I am a box</div>
+        <div class="box" id="box4">I am a box</div>
+</div>
+</body>
+</html>

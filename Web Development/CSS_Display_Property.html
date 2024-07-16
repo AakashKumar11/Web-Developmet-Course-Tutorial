@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+    .container{
+        border: 2px solid red;
+    }
+    .first{
+        background-color: rgb(42, 249, 42);
+    }
+    .second{
+        background-color:rgb(249, 95, 249);
+        /* display: none; */
+        /* visibility: hidden; */
+    }
+    .third{
+        display: inline-block;
+        width: 800px;
+        background-color: yellow;
+    }
+    .fourth{
+        background-color: rgb(110, 220, 247);
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Types of Display :- 
+        1. Inline 
+        2. Block
+        3. Inline-Block
+        4. Flex
+        5. Grid
+    <div class="first"> I am a Block element</div>
+    <span class="second">I am a Inline element</span>
+    <div class="third">I am a Inline-Block element</div>
+    <div class="fourth">I am a flex element</div>
+        
+    </div>
+</body>
+</html>

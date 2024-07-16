@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+    .container{
+        display: grid;
+        grid-template-areas:"navbar navbar navbar"
+        
+        "main section section"
+        "footer footer footer";
+    }
+     #navbar{
+        grid-area: navbar;
+        background-color: red;
+     }
+    #main{
+        background-color: rgb(19, 251, 116);
+    }
+    #section{
+        grid-area: section;
+        background-color: rgb(10, 22, 248);
+    }
+    #footer{
+        grid-area: footer;
+        background-color: fuchsia;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav id="navbar">navbar</nav>
+    <main id="main">main</main>
+    <section id="section">section</section>
+
+    <footer id="footer">footer</footer>
+</div>  
+</body>
+</html>

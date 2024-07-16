@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS</title>
+    <link rel="stylesheet" href="CSS_Types.CSS">
+    <style>
+    h1{
+        color: rgb(249, 13, 225);
+        background-color: hsl(67, 98%, 52%);
+    }
+
+    #box{
+        color: rgb(61, 15, 248);
+        background-color: rgb(6, 232, 252);
+    }
+    </style>
+</head>
+<body>
+    <h1>Three ways to add CSS in HTML</h1>
+    <!-- Inline CSS :- In inline CSS css is added directly to the element -->
+    <div>
+        <h1 style="color: red; background-color: aqua;">Inline CSS</h1>
+    </div>
+
+    <!-- Internal CSS :- In internal CSS style tag is added in head tag -->
+    <div>
+        <h1 id="box">Internal CSS</h1>
+    </div>
+
+    <!-- External CSS :- In External CSS first we make . (dot)  CSS file then add it in html using <link rel="stylesheet" href="style.css"> tag -->
+    <div>
+        <h1 id="main"> External CSS</h1>
+    </div>
+</body>
+</html>

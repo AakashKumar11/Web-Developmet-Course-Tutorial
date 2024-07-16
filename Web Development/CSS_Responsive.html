@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive</title>
+    <style>
+    /* *{
+        margin: 0;
+    } */
+    .box1{
+        box-sizing: border-box;
+        background-color: rgb(63, 243, 75);
+        border: 2px solid red;
+        margin: auto;
+        /* here px unit */
+        /* width: 400px; */
+
+        /* here vw :- viewport width full width that can be accomolidate on screen without scrooling
+        here vh :- viewport height full height that can be accomolidate on screen without scrolling */
+
+        width: 70vw;
+        height: 40vh;
+
+    }
+    .box2{
+        box-sizing: border-box;
+        background-color: rgb(12, 247, 243);
+        border: 2px solid rgb(242, 36, 187);
+        margin: 10px auto;
+        /* width: 800px; */
+        width: 70vw;
+        height: 40vh;
+
+    }
+
+    .container2{
+        border: 2px solid purple;
+        font-size: 10px;
+    }
+
+    #first{
+        background-color: yellow;
+        font-size: 3em;
+        /* em :- em is equal to the multiplication value of the parent container (3em = 10 * 3 = 30 px) */
+    }
+     html{
+        font-size: 20px;
+     }
+    #second{
+        background-color: red;
+        font-size: 2rem;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nesciunt? Ea commodi nam cumque consectetur qui! Cupiditate eum odit perspiciatis perferendis eaque obcaecati aperiam eligendi autem doloribus amet ratione quia soluta sed blanditiis quo, quas vitae? Illo fugiat eveniet suscipit, maxime laboriosam expedita quasi perspiciatis animi odit, quod commodi a sunt doloribus voluptatum, nam cupiditate neque excepturi labore </div>
+
+    <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias cupiditate esse at laborum incidunt in sint impedit ullam debitis tempora velit sequi sunt vel, consequuntur quia alias animi ipsum vitae voluptate dicta officiis adipisci. Tempora unde esse quam error rerum nihil! Accusantium fugiat illo obcaecati rerum totam ducimus itaque veritatis.</div>
+</div>
+
+<div class="container2">
+    <div class="box" id="first">this is first box</div>
+    <div class="box" id="second">this is second box</div>
+</div>
+</body>
+</html>

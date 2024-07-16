@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        background-color: #d00202e1;
+       
+    }
+    ul{
+        display: flex;
+        gap: 30px;
+        position: sticky;
+        top: 20px;
+    }
+    ul li{
+        list-style: none;
+        padding: 10px;
+        margin: 2px;
+        font-size: 1.5em;
+    }
+    li a {
+        text-decoration: none;
+        color: rgb(251, 247, 247);
+    }
+    main {
+        border: 2px solid black;
+        
+    }
+    section{
+        background: url("lake.jpg")  no-repeat ;
+        display: flex;
+        gap: 10px;
+        height: 100vh;
+        
+    }
+    aside{
+        margin: 10px 120px;
+    }
+
+    .item{
+        height: 100px;
+        width: 80vw;
+        border: 2px solid rgb(126, 126, 247);
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4em;
+    }
+    img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 90%;
+        left: 95%
+    }
+    .box{
+        height: 400px;
+        width: 50vw;
+        margin: 30px 40px;
+    }
+
+    #box1{
+        background-color: rgb(0, 252, 113);
+    }
+    #box2{
+        background-color: rgb(244, 0, 252);
+    }
+
+    footer{
+        background-color: yellow;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="http://">Home</a></li>
+            <li><a href="http://">About is</a></li>
+            <li><a href="http://">Services</a></li>
+            <li><a href="http://">Contact us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+    </section>
+    <aside>
+        <div class="item">
+            Welcome to he Website
+        </div>
+    </aside>
+</main>
+<div class="chatbot"><img src="image.jpg" alt=""></div>
+<footer>I am footer</footer>
+</div> 
+</body>
+</html>

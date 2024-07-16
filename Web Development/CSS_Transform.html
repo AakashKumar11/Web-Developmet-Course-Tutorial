@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+    .container{
+        background-color: red;
+        border: 2px solid red;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: greenyellow;
+        transition: all 1s ease-in 0s;
+    }
+    .box:hover{
+        transform:translateX(100px);
+        transform: translateY(100px);
+        transform: translate(100px ,100px);
+        transform: rotate(45deg);   /* it will rotate clockwise*/
+        transform: rotate(-45deg); /* it will rotate anticlockwise*/
+        transform: scaleX(2);    /*following example increases the box element to be two times of its original width:*/
+        transform: scaleX(0.5); /* The following example decreases the box element to be half of its original width:*/
+        transform: scaleY(3);  /*following example increases the box element to be three times of its original height:*/
+        transform: scaleY(0.5); /*The following example decreases the <div> element to be half of its original height:*/ 
+        transform: scale(2, 2); /*The scale() method increases or decreases the size of an element  (according to the parameters given for the width and height).The following example increases the box element to be two times of its original width, and two times of its original height: */
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">I am  a box</div>
+    </div>
+</body>
+</html>
